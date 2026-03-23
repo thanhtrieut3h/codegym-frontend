@@ -1,0 +1,99 @@
+/* setup basic*/
+*, *::befor, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px*/
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+.card {
+    /* Block */
+    width: 30rem;
+    height: 30rem;
+    background-color: #d5ebf3;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px dotted #e50f0f;
+}
+.card__text{
+    /* element */
+    font-size: 2rem;
+    color: #971aea;
+}
+.card__button{
+    /* element */
+    background-color: #971aea;
+    color: #ffffff;
+}
+.card--featured{
+    /* modifier for block */
+}
+.card__title--active {
+    /* modifier for element */
+}
+.box{
+    width: 20rem;
+    height: 20rem;
+    border: 1px dotted #971aea;
+    /*
+    margin-top: 5rem;
+    padding-top: 1rem;
+    */
+}
+.box__content{
+    /* margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 0rem;
+    margin-bottom: 3rem; */
+    /* padding-top: 1rem; */
+    background-color: #07fa44;
+    border: 1px solid red;
+    /* margin: 1rem 2rem 3rem 0rem; */
+    margin: 1rem 3rem 2rem;
+}
+.content{
+    width: 20rem;
+    height: 20rem;
+    /* display: inline-block; */
+}
+.content--first{
+    background-color: #07fa44;
+}
+.content--second{
+    background-color: #971aea;
+    position: relative;
+}
+.content--third{
+    background-color: #e50f0f;
+}
+.content__link{
+    display: list-item;
+    margin-left: 2rem;
+    color: #ffffff;
+}
+.content--logo{
+    /* position: relative; */
+    /*
+    top: 10rem;
+    left: 10rem; */
+    position: absolute;
+    top: -10rem;
+}
+.header{
+    width: 100%;
+    height: 5rem;
+    background-color: #971aea;
+    position: fixed;
+    top: 0rem;
+    z-index: 9999;
+}
